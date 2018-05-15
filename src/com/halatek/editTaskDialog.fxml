@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="433.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.halatek.EditTaskDialog">
+    <children>
+        <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Title" wrappingWidth="117.44140625"/>
+                <TextField fx:id="title" prefHeight="25.0" prefWidth="478.0"/>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Priority"/>
+                <ChoiceBox fx:id="priority" prefHeight="25.0" prefWidth="751.0"/>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Exp date"/>
+                <DatePicker fx:id="date" prefHeight="25.0" prefWidth="717.0"/>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description"/>
+                <TextArea fx:id="description" prefHeight="246.0" prefWidth="580.0"/>
+                <Button fx:id="add" mnemonicParsing="false" onAction="#handleEditAction" prefHeight="25.0"
+                        prefWidth="675.0" text="Button"/>
+            </children>
+        </VBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+</AnchorPane>
